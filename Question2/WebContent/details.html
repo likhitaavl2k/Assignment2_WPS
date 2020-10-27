@@ -1,0 +1,65 @@
+<html>
+<head>
+	<title>User Registration/login</title>
+
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="details.css">
+</head>
+<body >
+	<header style="background-color: #00c6fb;position: absolute;top: 1%;">
+		<a href="#"><i class="fa fa-home fa-5x" ></i></a>
+	</header>
+
+	<div class="container">
+
+    <form id="signup" action="servlet1" method="get">
+			<div>
+				<i id="down1" class="fa fa-arrow-down fa-4x" aria-hidden="true"></i>
+				<h3 id="h3tag1">Enter your details to add to DB</h3>
+			</div>
+
+		<div class="sep"></div>
+		<form action="details.html">
+        <div class="inputs">
+        	<label style="color: black;font-family: cursive;font-size: 15px;"><b>ID:</b></label>
+            <input type="text" name="id" placeholder="Enter your ID" required>
+            
+        	<label style="color: black;font-family: cursive;font-size: 15px;"><b>Name:</b></label>
+            <input type="text" name="name" placeholder="Enter Name" required >
+			
+			<label style="color: black;font-family: cursive;font-size: 15px;"><b>Department name:</b></label>
+            <input type="text" name="dept" placeholder="Enter department name" required >
+            
+            <button class="button" name="add"><span>ADD</span></button>
+        </form>
+        </div>
+
+    </form>
+
+	</div>
+
+	<div class="container2">
+
+    <form id="signup" action="servlet2" method="get">
+
+        	<div>
+				<i id="down2" class="fa fa-arrow-down fa-4x" aria-hidden="true"></i>
+				<h3 id="h3tag2">Enter a string to search for student details</h3>
+			</div>
+        
+        <div class="sep"></div>
+
+        <div class="inputs">
+        	<label style="color: black;font-family: cursive;font-size: 15px;"><b>String:</b></label>
+            <input type="text" name="string" placeholder="Enter string" required>
+        	
+            <button class="button" name="search"><span style="font-size: 17px;">Search</span></button>
+        
+        </div>
+
+    </form>
+
+	</div>
+​
+</body>
+</html>
